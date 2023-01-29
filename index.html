@@ -35,13 +35,13 @@ function OverwritePage(text) {
 }
 GrabPage(homeURL);
 document.addEventListener(`click`, e => {
-  const origin = e.target.closest(`a`);
+    const origin = e.target.closest(`a`);
   
-  if (origin) {
-      const href = origin.href;
-      console.log(href);
-      e.preventDefault();
-  }
+    if (origin) {
+        const href = origin.href;
+        console.log(href);
+        e.preventDefault();
+    }
 });
     </script>
 </body>
